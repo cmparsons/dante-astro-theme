@@ -1,6 +1,6 @@
 ---
 type: BlogPost
-title: The Advantages & Disadvantages of Working from Home 3
+title: The Advantages & Disadvantages of Working from Home
 excerpt: >-
   In recent years, the way we work has undergone a significant transformation,
   largely due to advancements in technology and changing attitudes toward
