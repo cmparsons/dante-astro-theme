@@ -51,6 +51,52 @@ export default defineStackbitConfig({
                             ]
                         }
                     ]
+                },
+                {
+                    name: 'Project',
+                    type: 'page',
+                    filePath: 'src/content/projects/{slug}.md',
+                    urlPath: 'projects/{slug}',
+                    fields: [
+                        {
+                            name: 'isFeatured',
+                            type: 'boolean'
+                        },
+                        {
+                            name: 'title',
+                            type: 'string',
+                            required: true
+                        },
+                        {
+                            name: 'excerpt',
+                            type: 'text'
+                        },
+                        {
+                            name: 'publishDate',
+                            type: 'date'
+                        },
+                        {
+                            name: 'tags',
+                            type: 'list',
+                            items: {
+                                type: 'string'
+                            }
+                        },
+                        {
+                            name: 'seo',
+                            type: 'object',
+                            fields: [
+                                {
+                                    name: 'title',
+                                    type: 'string'
+                                },
+                                {
+                                    name: 'description',
+                                    type: 'string'
+                                }
+                            ]
+                        }
+                    ]
                 }
             ]
         })
