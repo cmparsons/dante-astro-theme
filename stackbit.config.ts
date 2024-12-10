@@ -32,6 +32,20 @@ export default defineStackbitConfig({
                                 {
                                     name: 'description',
                                     type: 'string'
+                                },
+                                {
+                                    name: 'image',
+                                    type: 'object',
+                                    fields: [
+                                        {
+                                            name: 'src',
+                                            type: 'image'
+                                        },
+                                        {
+                                            name: 'alt',
+                                            type: 'string'
+                                        }
+                                    ]
                                 }
                             ]
                         }
@@ -74,6 +88,20 @@ export default defineStackbitConfig({
                                 {
                                     name: 'description',
                                     type: 'string'
+                                },
+                                {
+                                    name: 'image',
+                                    type: 'object',
+                                    fields: [
+                                        {
+                                            name: 'src',
+                                            type: 'image'
+                                        },
+                                        {
+                                            name: 'alt',
+                                            type: 'string'
+                                        }
+                                    ]
                                 }
                             ]
                         }
@@ -120,12 +148,32 @@ export default defineStackbitConfig({
                                 {
                                     name: 'description',
                                     type: 'string'
+                                },
+                                {
+                                    name: 'image',
+                                    type: 'object',
+                                    fields: [
+                                        {
+                                            name: 'src',
+                                            type: 'image'
+                                        },
+                                        {
+                                            name: 'alt',
+                                            type: 'string'
+                                        }
+                                    ]
                                 }
                             ]
                         }
                     ]
                 }
-            ]
+            ],
+            assetsConfig: {
+                referenceType: 'static',
+                publicPath: '/',
+                uploadDir: 'public',
+                staticDir: 'public'
+            }
         })
     ]
 });

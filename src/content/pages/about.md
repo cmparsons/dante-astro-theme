@@ -1,4 +1,5 @@
 ---
+type: RootPage
 title: About
 seo:
   title: About Me

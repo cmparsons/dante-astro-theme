@@ -1,4 +1,5 @@
 ---
+type: RootPage
 title: Get in touch
 seo:
   title: Contact
