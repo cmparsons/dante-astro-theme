@@ -11,6 +11,33 @@ export default defineStackbitConfig({
             contentDirs: ['src/content'],
             models: [
                 {
+                    type: 'page',
+                    name: 'RootPage',
+                    filePath: 'src/content/pages/{slug}.md',
+                    urlPath: '/{slug}',
+                    fields: [
+                        {
+                            name: 'title',
+                            type: 'string',
+                            required: true
+                        },
+                        {
+                            name: 'seo',
+                            type: 'object',
+                            fields: [
+                                {
+                                    name: 'title',
+                                    type: 'string'
+                                },
+                                {
+                                    name: 'description',
+                                    type: 'string'
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
                     name: 'BlogPost',
                     type: 'page',
                     filePath: 'src/content/blog/{slug}.md',
