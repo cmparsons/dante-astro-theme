@@ -1,6 +1,6 @@
 ---
 type: BlogPost
-title: Test blog post
+title: Post Upper Case
 excerpt: >-
   In recent years, the way we work has undergone a significant transformation,
   largely due to advancements in technology and changing attitudes toward
